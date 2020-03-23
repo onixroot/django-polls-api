@@ -12,6 +12,7 @@ django-rest-auth = "*"
 django-allauth = "*"
 drf-yasg = "*"
 gunicorn = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"

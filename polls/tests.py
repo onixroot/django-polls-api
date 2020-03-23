@@ -4,12 +4,12 @@ from django.test import TestCase
 
 from rest_framework.test import APITestCase
 from rest_framework.test import APIClient
-from rest_framework.test import APIRequestFactory
+# from rest_framework.test import APIRequestFactory
 from django.contrib.auth import get_user_model
 from rest_framework.authtoken.models import Token
 
 
-from .apiviews import PollViewSet
+# from .apiviews import PollViewSet
 
 # class TestPoll(APITestCase):
 # 	def setUp(self):
