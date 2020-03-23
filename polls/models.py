@@ -33,9 +33,6 @@ class Vote(models.Model):
 	choice = models.ForeignKey(Choice, related_name='votes', on_delete=models.CASCADE)
 	poll = models.ForeignKey(Poll, on_delete=models.CASCADE)
 	voted_by = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Проголосовал')
-	
-	def __str__(self):
-		return self.voted_by, self.poll, self.choice
 
 	class Meta:
 		unique_together = ("poll", "voted_by") #Sets of field names that, taken together, must be unique
