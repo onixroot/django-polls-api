@@ -22,7 +22,7 @@ class Choice(models.Model):
 	choice_text = models.CharField(max_length=100)
 	
 	def __str__(self):
-		return f"Проголосовало: {Vote.objects.filter(choice__exact=self.id).count()}"
+		return f"{self.choice_text} (Голосов: {Vote.objects.filter(choice__exact=self.id).count()})"
 
 	class Meta:
 		verbose_name = 'Вариант'
